@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CRUD</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href="css/bootstrap.css">
+    <link rel='stylesheet' href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+
+        <div class="row">
+            <form class="col-sm-5" id="form">
+
+                <h3 class="alert-warning text-center p-2">
+                    Add/Update Student
+                </h3>
+
+                <div>
+                    <input type="text" class="form-control" style="display: none;" id="stuid">
+
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" placeholder="Enter Full Name" id="nameid">
+                </div>
+                <div>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="example@example.com" id="emailid">
+                </div>
+                <div>
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="********" id="passwordid">
+                </div>
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary" id="btnadd">Save</button>
+                </div>
+                <div id="msg"></div>
+
+            </form>
+
+            <div class="col-sm-7 text-center">
+                <h3 class="alert-warning p-2">Show Student Information</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ajaxscript.js"></script>
+    <script src="js/popper.js"></script>
+</body>
+
+</html>
